@@ -54,6 +54,12 @@
     <symbol id="icon-arrow-144" viewBox="0 0 195 32">
       <path d="M193.415 17.414c.78-.781.78-2.047 0-2.829L180.687 1.857a2 2 0 0 0-2.829 2.828l11.315 11.314-11.315 11.314a2 2 0 0 0 2.829 2.828l12.728-12.728zM0 18h192v-4H0v4z"/>
     </symbol>
+    <symbol id="icon-icon-left-arrow-114" viewBox="0 0 77 16">
+      <path fill="#5a5959" d="M.626 7.293a.999.999 0 0 0 0 1.414l6.364 6.364a.999.999 0 1 0 1.414-1.414L2.747 8l5.657-5.657A.999.999 0 1 0 6.99.929L.626 7.293zM77.333 7h-76v2h76V7z" style="fill:var(--color1, #5a5959)"/>
+    </symbol>
+    <symbol id="icon-icon-left-arrow-144" viewBox="0 0 97 16">
+      <path fill="#5a5959" d="M.626 7.293a.999.999 0 0 0 0 1.414l6.364 6.364a.999.999 0 1 0 1.414-1.414L2.747 8l5.657-5.657A.999.999 0 1 0 6.99.929L.626 7.293zM97.333 7h-96v2h96V7z" style="fill:var(--color1, #5a5959)"/>
+    </symbol>
     <symbol id="icon-close" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M24 8 8 24M8 8l16 16"/>
     </symbol>

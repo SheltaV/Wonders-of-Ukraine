@@ -30,21 +30,14 @@ h6 {
     overflow: hidden;
 } */
 
-.link {
+a {
     text-decoration: none;
 }
 
-.list {
+ul {
     margin: 0;
     padding-left: 0;
     list-style-type: none;
-}
-
-.container {
-    max-width: 100%;
-    padding: 0 16px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 img {
@@ -59,6 +52,12 @@ body {
     color: var(--main-color);
 }
 
+.container {
+    max-width: 100%;
+    padding: 0 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*----------------- header + burger -----------------*/
 
@@ -91,7 +90,6 @@ body {
     font-size: 24px;
     font-family: "Jomolhari", serif;
     line-height: 1.42;
-    letter-spacing: 0;
 }
 
 .hero-title {
@@ -101,18 +99,34 @@ body {
     line-height: 1.4;
     letter-spacing: 1px;
     margin-bottom: 64px;
+    position: relative;
+}
+
+.hero-title::after {
+    content: 'Ukraine';
+    display: block;
+    position: absolute;
+    transform: rotate(180deg) scaleX(-1);
+    background: linear-gradient(transparent, var(--main-color));
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.2;
+    top: 70px;
 }
 
 .hero-button {
     color: inherit;
+    font-family: "Jomolhari", serif;
     background-color: var(--btn-color);
     border: 0;
     padding: 12px 52px;
     border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.37;
 }
 
 .hero-icons {
-    fill: var(--main-color)
+    fill: var(--main-color);
 }
 
 .hero-soc {
@@ -120,5 +134,106 @@ body {
     gap: 15px;
     justify-content: center;
     margin-top: 225px;
+}
+
+/*----------------- about -----------------*/
+
+.about-container {
+    margin-top: 112px;
+}
+
+.about-container .about-text:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    font-family: "Lato", sans-serif;
+    line-height: 1.4;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+}
+
+/*----------------- tours -----------------*/
+
+.tours-container {
+    margin-top: 80px;
+}
+
+.tours-title {
+    font-size: 40px;
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    line-height: 1.4;
     margin-bottom: 32px;
+}
+
+.tours-subtitle {
+    font-size: 24px;
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    line-height: 1.41;
+    margin: 16px 0;
+}
+
+.tours-text {
+    font-size: 16px;
+    line-height: 1.37;
+    letter-spacing: 0.16px;
+}
+
+.tours-title-list {
+    font-size: 18px;
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    line-height: 1.39;
+    margin: 16px 0;
+}
+
+.tours-list-item {
+    font-size: 16px;
+    line-height: 1.37;
+    display: flex;
+    gap: 16px;
+}
+
+.tours-list-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.tours-icons {
+    fill: var(--main-color);
+}
+
+.tours-button {
+    color: inherit;
+    font-family: "Jomolhari", serif;
+    background-color: var(--btn-color);
+    border: 0;
+    padding: 16px 0;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.37;
+    width: 100%;
+    margin: 32px 0;
+}
+
+.tours-arrows-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow-button {
+    /* fill: var(--main-color); */
+    border: 0;
+    /* background-color: transparent; */
+    display: block;
 }
