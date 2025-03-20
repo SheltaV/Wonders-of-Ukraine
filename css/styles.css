@@ -48,6 +48,8 @@ img {
 
 body {
     font-family: "lato", sans-serif;
+    line-height: 1.37;
+    font-size: 16px;
     background-color: var(--bg-color);
     color: var(--main-color);
 }
@@ -59,6 +61,29 @@ body {
     margin-right: auto;
 }
 
+.button {
+    color: inherit;
+    font-family: "Jomolhari", serif;
+    background-color: var(--btn-color);
+    border: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.37;
+    padding: 16px 0;
+}
+
+.title {
+    font-size: 40px;
+    text-align: center;
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.icon {
+    fill: var(--main-color);
+}
+
 /*----------------- header + burger -----------------*/
 
 .burger-button {
@@ -68,9 +93,6 @@ body {
     padding: 0;
 }
 
-.logo-icon {
-    fill: var(--main-color);
-}
 
 .header-container {
     margin-top: 16px;
@@ -94,9 +116,6 @@ body {
 
 .hero-title {
     font-size: 64px;
-    font-family: "Jomolhari", serif;
-    font-weight: 400;
-    line-height: 1.4;
     letter-spacing: 1px;
     margin-bottom: 64px;
     position: relative;
@@ -115,18 +134,7 @@ body {
 }
 
 .hero-button {
-    color: inherit;
-    font-family: "Jomolhari", serif;
-    background-color: var(--btn-color);
-    border: 0;
     padding: 12px 52px;
-    border-radius: 4px;
-    font-size: 16px;
-    line-height: 1.37;
-}
-
-.hero-icons {
-    fill: var(--main-color);
 }
 
 .hero-soc {
@@ -147,18 +155,10 @@ body {
 }
 
 .about-title {
-    text-align: center;
-    font-size: 40px;
-    font-family: "Jomolhari", serif;
-    font-weight: 400;
-    line-height: 1.4;
     margin-bottom: 30px;
 }
 
 .about-text {
-    font-family: "Lato", sans-serif;
-    line-height: 1.4;
-    font-size: 16px;
     letter-spacing: 0.2px;
 }
 
@@ -169,33 +169,23 @@ body {
 }
 
 .tours-title {
-    font-size: 40px;
-    font-family: "Jomolhari", serif;
-    font-weight: 400;
-    line-height: 1.4;
     margin-bottom: 32px;
 }
 
 .tours-subtitle {
     font-size: 24px;
-    font-family: "Jomolhari", serif;
-    font-weight: 400;
-    line-height: 1.41;
     margin: 16px 0;
+    text-align: left;
 }
 
 .tours-text {
-    font-size: 16px;
-    line-height: 1.37;
     letter-spacing: 0.16px;
 }
 
 .tours-title-list {
     font-size: 18px;
-    font-family: "Jomolhari", serif;
-    font-weight: 400;
-    line-height: 1.39;
     margin: 16px 0;
+    text-align: left;
 }
 
 .tours-list-item {
@@ -209,31 +199,186 @@ body {
     margin-bottom: 8px;
 }
 
-.tours-icons {
-    fill: var(--main-color);
-}
 
 .tours-button {
-    color: inherit;
-    font-family: "Jomolhari", serif;
-    background-color: var(--btn-color);
-    border: 0;
-    padding: 16px 0;
-    border-radius: 4px;
-    font-size: 16px;
-    line-height: 1.37;
     width: 100%;
-    margin: 32px 0;
+    margin: 32px 0 20px;
 }
 
-.tours-arrows-wrap {
+.arrows-wrap {
     display: flex;
     justify-content: space-between;
 }
 
 .arrow-button {
-    /* fill: var(--main-color); */
     border: 0;
-    /* background-color: transparent; */
+    background-color: transparent;
     display: block;
+    padding-right: 0;
+}
+
+.arrow-left {
+    transform: scaleX(-1);
+}
+
+/*----------------- gallery -----------------*/
+
+.gallery-title {
+    margin-top: 80px;
+}
+
+.gallery-picture {
+    margin: 32px 0 20px;
+}
+
+/*----------------- reviews -----------------*/
+
+.reviews-title {
+    margin: 100px 0 32px;
+}
+
+.reviewers-name {
+    margin-bottom: 11px;
+    font-size: 18px;
+}
+
+.stars {
+    fill: #AE990B;
+    filter: drop-shadow(27px 0 #AE990B)
+    drop-shadow(53px 0 #AE990B)
+    drop-shadow(27px 0 #AE990B);
+}
+
+.review-wrap {
+    padding: 32px;
+    border: 1px solid var(--main-color);
+    margin-bottom: 20px;
+}
+
+.review-subwrap {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.review-text {
+    height: 170px;
+    overflow: auto;
+    letter-spacing: 0.16px;
+}
+
+/*----------------- travel -----------------*/
+
+.travel-title {
+    font-size: 32px;
+    text-align: left;
+    margin-top: 194px;
+}
+
+.travel-text {
+    letter-spacing: 0.16px;
+    width: 320px;
+    margin-top: 24px;
+}
+
+.travel-form {
+    margin-top: 32px;
+}
+
+.travel-label {
+    font-size: 18px;
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    line-height: 1.39;
+}
+
+.travel-input {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 8px 0 12px;
+    color: var(--main-color);
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    padding: 14px 12px;
+    font-size: 16px;
+    line-height: 1.37;
+    letter-spacing: 0.16px;
+}
+
+.travel-input::placeholder {
+    color: var(--input-color);
+
+}
+
+.travel-textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 102px;
+    resize: none;
+    overflow: auto;
+    color: var(--main-color);
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    padding: 14px 12px;
+    font-size: 16px;
+    line-height: 1.37;
+    letter-spacing: 0.2px;
+}
+
+.travel-textarea:focus {
+}
+
+.travel-textarea::placeholder {
+    color: var(--input-color);
+    
+}
+
+.travel-button {
+    width: 100%;
+    margin-top: 32px;
+    border-radius: 0;
+    margin-bottom: 190px;
+}
+
+/*----------------- footer -----------------*/
+
+.footer-list {
+    margin: 32px 0;
+}
+
+.footer-link {
+    display: block;
+    font-family: "Jomolhari", serif;
+    line-height: 1.37;
+    color: var(--main-color);
+}
+
+.footer-link:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.contacts-link {
+    display: block;
+    font-style: normal;
+    font-family: "Jomolhari", serif;
+    color: var(--main-color);
+    line-height: 1.37;
+}
+
+.contacts-link:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 15px;
+    margin: 32px 0 64px;
+}
+
+.footer-text {
+    font-size: 12px;
+    font-family: "Jomolhari", serif;
+    line-height: 1.41;
+    text-align: center;
 }
