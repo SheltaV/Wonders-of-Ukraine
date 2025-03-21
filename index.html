@@ -62,9 +62,9 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="about">
         <div class="container about-container">
-          <h2 class="title about-title">About us</h2>
+          <h2 class="title about-title" id="about">About us</h2>
           <p class="about-text">
             Welcome to our travel agency in Ukraine! We are a locally owned and
             operated travel agency that specializes in creating unique and
@@ -86,16 +86,23 @@
             We look forward to helping you plan an unforgettable vacation in
             Ukraine or beyond!
           </p>
+          <!-- <svg class="icon-map" width="746" height="431">
+            <use href="./images/svg/symbol-defs-pretty.svg#icon-map"></use>
+          </svg> -->
         </div>
       </section>
-      <section>
+      <section class="tours">
         <div class="container tours-container">
-          <h2 class="title tours-title">Our tours</h2>
-          <picture>
-            <source />
-            <source />
-            <img src="./images/tours-img-1.jpg" alt="Synevyr"
-          /></picture>
+          <h2 class="title tours-title" id="tours">Our tours</h2>
+          <div class="image-wrap">
+            <img
+              class="tours-image"
+              src="./images/tours-img-1-full.jpg"
+              alt="Synevyr"
+              width="454"
+              height="409"
+            />
+          </div>
           <h3 class="title tours-subtitle">
             Lake Synevyr and Shipit waterfall
           </h3>
@@ -140,7 +147,7 @@
             </li>
           </ul>
           <button class="button tours-button" type="button">Book</button>
-          <div class="arrows-wrap">
+          <div class="arrows-wrap arrows-tours">
             <button class="arrow-button arrow-left" type="button">
               <svg class="icon tours-arrows" width="114" height="22">
                 <use
@@ -158,19 +165,17 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="gallery">
         <div class="container gallery-container">
-          <h2 class="title gallery-title">Gallery</h2>
-          <picture>
-            <source />
-            <source />
+          <h2 class="title gallery-title" id="gallery">Gallery</h2>
+          <div class="gallery-image-wrap">
             <img
-              class="gallery-picture"
+              class="gallery-image"
               src="./images/gallery-img-mob-1.jpg"
               alt="winter forest"
             />
-          </picture>
-          <div class="arrows-wrap">
+          </div>
+          <div class="arrows-wrap arrows-gallery">
             <button class="arrow-button arrow-left" type="button">
               <svg class="icon gallery-arrows" width="114" height="22">
                 <use
@@ -188,7 +193,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="reviews">
         <div class="container reviews-container">
           <h2 class="title reviews-title">Reviews</h2>
           <div class="review-wrap">
@@ -213,7 +218,7 @@
               for the opportunity to learn more about our country
             </p>
           </div>
-          <div class="arrows-wrap">
+          <div class="arrows-wrap arrows-review">
             <button class="arrow-button arrow-left" type="button">
               <svg class="icon gallery-arrows" width="114" height="22">
                 <use
@@ -231,7 +236,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="travel">
         <div class="container travel-container">
           <h2 class="title travel-title">Start travel</h2>
           <p class="travel-text">
@@ -255,6 +260,7 @@
               type="tel"
               id="tel"
               placeholder="+380__-___-__-__"
+              pattern="^(?:\+38)?(?:\(044\)[ .-]?[0-9]{3}[ .-]?[0-9]{2}[ .-]?[0-9]{2}|044[ .-]?[0-9]{3}[ .-]?[0-9]{2}[ .-]?[0-9]{2}|044[0-9]{7})$"
             />
             <textarea
               class="travel-textarea"
@@ -267,7 +273,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container footer-container">
         <a href="#"
           ><svg class="icon footer-logo" width="127" height="90">
@@ -275,20 +281,20 @@
           </svg>
         </a>
         <ul class="footer-list">
-          <a class="footer-link" href="#">
+          <a class="footer-link" href="#about">
             <li>About us</li>
           </a>
-          <a class="footer-link" href="#">
+          <a class="footer-link" href="#tours">
             <li>Tours</li>
           </a>
-          <a class="footer-link" href="#">
+          <a class="footer-link" href="#gallery">
             <li>Gallery</li>
           </a>
-          <a class="footer-link" href="#">
+          <a class="footer-link" href="#contacts">
             <li>Contacts</li>
           </a>
         </ul>
-        <address class="contacts">
+        <address class="contacts" id="contacts">
           <ul>
             <a class="contacts-link" href="#">
               <li>+38097-123-11-11</li>

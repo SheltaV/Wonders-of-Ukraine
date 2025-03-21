@@ -4,6 +4,7 @@
     --btn-color: #394014;
     --not-active-color: #5A5959;
     --input-color: #B9B9B9;
+    --stars-color: #AE990B;
 }
 
 p,
@@ -86,13 +87,17 @@ body {
 
 /*----------------- header + burger -----------------*/
 
+.header {
+    position: absolute;
+    width: 100%;
+}
+
 .burger-button {
     stroke: var(--main-color);
     border: 0;
     background-color: transparent;
     padding: 0;
 }
-
 
 .header-container {
     margin-top: 16px;
@@ -102,13 +107,19 @@ body {
 
 /*----------------- hero -----------------*/
 
+.hero {
+    background-image: url(../images/main-img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 .hero-container {
     max-width: 234px;
-    margin-top: 200px;
     text-align: center;
 }
 
 .hero-subtitle {
+    padding-top: 260px;
     font-size: 24px;
     font-family: "Jomolhari", serif;
     line-height: 1.42;
@@ -142,16 +153,18 @@ body {
     gap: 15px;
     justify-content: center;
     margin-top: 225px;
+    padding-bottom: 32px;
 }
 
 /*----------------- about -----------------*/
 
-.about-container {
-    margin-top: 112px;
+.about {
+    padding-top: 80px;
 }
 
 .about-container .about-text:not(:last-child) {
     margin-bottom: 30px;
+    background-repeat: repeat;
 }
 
 .about-title {
@@ -162,14 +175,36 @@ body {
     letter-spacing: 0.2px;
 }
 
+/* .icon-map {
+    fill: var(--main-color);
+    opacity: .5;
+    position: relative;
+    top: -350px;
+} */
+
 /*----------------- tours -----------------*/
 
-.tours-container {
-    margin-top: 80px;
+.tours {
+    padding-top: 80px;
 }
 
 .tours-title {
     margin-bottom: 32px;
+}
+
+.image-wrap {
+    width: 100vw;
+    max-width: 100vw;
+    margin: 0 calc(-50vw + 50%);
+}
+
+.tours-image {
+    /* position: relative;
+    min-width: 454px;
+    height: 409px;
+    left: -70px;
+    object-fit: cover; */
+    margin: 0 auto;
 }
 
 .tours-subtitle {
@@ -223,18 +258,29 @@ body {
 
 /*----------------- gallery -----------------*/
 
-.gallery-title {
-    margin-top: 80px;
+.gallery {
+    padding-top: 80px;
+    padding-bottom: 68px;
 }
 
-.gallery-picture {
+.gallery-image {
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+.gallery-image-wrap {
     margin: 32px 0 20px;
 }
 
 /*----------------- reviews -----------------*/
 
-.reviews-title {
-    margin: 100px 0 32px;
+.reviews {
+    padding-top: 32px;
+    padding-bottom: 20px;
+    margin-bottom: 80px;
+    background-image: url(../images/reviews-img-mob.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .reviewers-name {
@@ -243,16 +289,17 @@ body {
 }
 
 .stars {
-    fill: #AE990B;
-    filter: drop-shadow(27px 0 #AE990B)
-    drop-shadow(53px 0 #AE990B)
-    drop-shadow(27px 0 #AE990B);
+    fill: var(--stars-color);
+    filter: drop-shadow(27px 0 var(--stars-color))
+    drop-shadow(53px 0 var(--stars-color))
+    drop-shadow(27px 0 var(--stars-color));
 }
 
 .review-wrap {
     padding: 32px;
     border: 1px solid var(--main-color);
-    margin-bottom: 20px;
+    max-width: 279px;
+    margin: 0 auto 20px;
 }
 
 .review-subwrap {
@@ -270,10 +317,24 @@ body {
 
 /*----------------- travel -----------------*/
 
+.travel {
+    padding-top: 54px;
+    padding-bottom: 54px;
+    background-image: url(../images/travel-img-mob.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.travel-container {
+    position: relative;
+    z-index: 1;
+    background-color: #141A19;
+    padding: 40px 16px;
+}
+
 .travel-title {
     font-size: 32px;
     text-align: left;
-    margin-top: 194px;
 }
 
 .travel-text {
@@ -338,10 +399,13 @@ body {
     width: 100%;
     margin-top: 32px;
     border-radius: 0;
-    margin-bottom: 190px;
 }
 
 /*----------------- footer -----------------*/
+
+.footer {
+    padding-top: 96px;
+}
 
 .footer-list {
     margin: 32px 0;
