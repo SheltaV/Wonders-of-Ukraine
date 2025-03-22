@@ -22,17 +22,47 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <a href="#"
+        <a href="./index.html"
           ><svg class="icon logo-icon" width="64" height="46">
             <use href="./images/svg/symbol-defs-pretty.svg#icon-Logo-1"></use>
           </svg>
         </a>
-        <nav class="menu"></nav>
+        <!-- <nav class="menu"></nav> -->
         <button type="button" class="burger-button">
           <svg class="burger" width="40" height="40">
             <use href="./images/svg/symbol-defs-pretty.svg#icon-mob-menu"></use>
           </svg>
         </button>
+      </div>
+      <div class="mob-menu visually-hidden">
+        <div class="mob-menu-header">
+          <a href="./index.html"
+            ><svg class="icon logo-icon" width="64" height="46">
+              <use href="./images/svg/symbol-defs-pretty.svg#icon-Logo-1"></use>
+            </svg>
+          </a>
+          <button type="button" class="burger-button">
+            <svg class="burger" width="40" height="40">
+              <use href="./images/svg/symbol-defs-pretty.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+        <nav>
+          <ul class="mob-menu-list">
+            <a class="mob-menu-link" href="#about">
+              <li>About us</li>
+            </a>
+            <a class="mob-menu-link" href="#tours">
+              <li>Tours</li>
+            </a>
+            <a class="mob-menu-link" href="#gallery">
+              <li>Gallery</li>
+            </a>
+            <a class="mob-menu-link" href="#contacts">
+              <li>Contacts</li>
+            </a>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
@@ -40,19 +70,25 @@
         <div class="container hero-container">
           <p class="hero-subtitle">Unlock the Wonders of</p>
           <h1 class="title hero-title">Ukraine</h1>
-          <button class="button hero-button" type="button">Our tours</button>
+          <a class="hero-button" href="#tours">Our tours</a>
           <div class="hero-soc">
-            <a href="#"
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer noopener nofollow"
               ><svg class="icon hero-icons" width="24" height="24">
                 <use
                   href="./images/svg/symbol-defs-pretty.svg#icon-instagram-logo"
                 ></use></svg></a
-            ><a href="#"
+            ><a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noreferrer noopener nofollow"
               ><svg class="icon hero-icons" width="24" height="24">
                 <use
                   href="./images/svg/symbol-defs-pretty.svg#icon-facebook-logo"
                 ></use></svg></a
-            ><a href="#"
+            ><a href="#" target="_blank" rel="noreferrer noopener nofollow"
               ><svg class="icon hero-icons" width="24" height="24">
                 <use
                   href="./images/svg/symbol-defs-pretty.svg#icon-telegram-logo"
@@ -86,9 +122,6 @@
             We look forward to helping you plan an unforgettable vacation in
             Ukraine or beyond!
           </p>
-          <!-- <svg class="icon-map" width="746" height="431">
-            <use href="./images/svg/symbol-defs-pretty.svg#icon-map"></use>
-          </svg> -->
         </div>
       </section>
       <section class="tours">
@@ -275,57 +308,81 @@
     </main>
     <footer class="footer">
       <div class="container footer-container">
-        <a href="#"
+        <a href="./index.html"
           ><svg class="icon footer-logo" width="127" height="90">
             <use href="./images/svg/symbol-defs-pretty.svg#icon-Logo-1"></use>
           </svg>
         </a>
-        <ul class="footer-list">
-          <a class="footer-link" href="#about">
-            <li>About us</li>
-          </a>
-          <a class="footer-link" href="#tours">
-            <li>Tours</li>
-          </a>
-          <a class="footer-link" href="#gallery">
-            <li>Gallery</li>
-          </a>
-          <a class="footer-link" href="#contacts">
-            <li>Contacts</li>
-          </a>
-        </ul>
-        <address class="contacts" id="contacts">
-          <ul>
-            <a class="contacts-link" href="#">
-              <li>+38097-123-11-11</li>
+        <nav>
+          <ul class="footer-list">
+            <a class="footer-link" href="#about">
+              <li>About us</li>
             </a>
-            <a class="contacts-link" href="#">
-              <li>WondersOfUkraine@gmail.com</li>
+            <a class="footer-link" href="#tours">
+              <li>Tours</li>
             </a>
-            <a class="contacts-link" href="#">
-              <li>Lviv, Zaporyzhka, 198</li>
+            <a class="footer-link" href="#gallery">
+              <li>Gallery</li>
+            </a>
+            <a class="footer-link" href="#contacts">
+              <li>Contacts</li>
             </a>
           </ul>
+        </nav>
+        <address class="contacts" id="contacts">
+          <ul class="contacts-list">
+            <li>
+              <a class="contacts-link" href="tel:+380971231111">
+                +38097-123-11-11
+              </a>
+            </li>
+            <li>
+              <a class="contacts-link" href="mailto:WondersOfUkraine@gmail.com">
+                WondersOfUkraine@gmail.com
+              </a>
+            </li>
+            <li>
+              <a
+                class="contacts-link"
+                href="https://maps.app.goo.gl/zWR6FsSrDJE461qi7"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                Lviv, Zaporyzhka, 198
+              </a>
+            </li>
+          </ul>
         </address>
-        <div class="footer-icons">
-          <svg class="icon footer-icon" width="24" height="24">
-            <use
-              href="./images/svg/symbol-defs-pretty.svg#icon-instagram-logo"
-            ></use>
-          </svg>
-          <svg class="icon footer-icon" width="24" height="24">
-            <use
-              href="./images/svg/symbol-defs-pretty.svg#icon-facebook-logo"
-            ></use>
-          </svg>
-          <svg class="icon footer-icon" width="24" height="24">
-            <use
-              href="./images/svg/symbol-defs-pretty.svg#icon-telegram-logo"
-            ></use>
-          </svg>
+        <div class="footer-soc">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            ><svg class="icon footer-icons" width="24" height="24">
+              <use
+                href="./images/svg/symbol-defs-pretty.svg#icon-instagram-logo"
+              ></use></svg></a
+          ><a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            ><svg class="icon footer-icons" width="24" height="24">
+              <use
+                href="./images/svg/symbol-defs-pretty.svg#icon-facebook-logo"
+              ></use></svg></a
+          ><a href="#" target="_blank" rel="noreferrer noopener nofollow"
+            ><svg class="icon footer-icons" width="24" height="24">
+              <use
+                href="./images/svg/symbol-defs-pretty.svg#icon-telegram-logo"
+              ></use>
+            </svg>
+          </a>
         </div>
         <p class="footer-text">&copy All Rights Reserved</p>
       </div>
     </footer>
+    <!-- <div class="backdrop">
+      <div class="modal"></div>
+    </div> -->
   </body>
 </html>
