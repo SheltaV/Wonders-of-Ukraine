@@ -18,23 +18,39 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
-        <a href="./index.html"
+        <a class="logo-link" href="./index.html"
           ><svg class="icon logo-icon" width="64" height="46">
             <use href="./images/svg/symbol-defs-pretty.svg#icon-Logo-1"></use>
           </svg>
         </a>
-        <!-- <nav class="menu"></nav> -->
+        <nav class="menu">
+          <ul class="menu-list">
+            <a class="menu-link" href="#about">
+              <li>About us</li>
+            </a>
+            <a class="menu-link" href="#tours">
+              <li>Tours</li>
+            </a>
+            <a class="menu-link" href="#gallery">
+              <li>Gallery</li>
+            </a>
+            <a class="menu-link" href="#contacts">
+              <li>Contacts</li>
+            </a>
+          </ul>
+        </nav>
         <button type="button" class="burger-button">
           <svg class="burger" width="40" height="40">
             <use href="./images/svg/symbol-defs-pretty.svg#icon-mob-menu"></use>
           </svg>
         </button>
       </div>
-      <div class="mob-menu visually-hidden">
+      <div class="mob-menu is-hidden">
         <div class="mob-menu-header">
           <a href="./index.html"
             ><svg class="icon logo-icon" width="64" height="46">
@@ -68,9 +84,11 @@
     <main>
       <section class="hero">
         <div class="container hero-container">
-          <p class="hero-subtitle">Unlock the Wonders of</p>
-          <h1 class="title hero-title">Ukraine</h1>
-          <a class="hero-button" href="#tours">Our tours</a>
+          <div class="hero-wrap">
+            <p class="hero-subtitle">Unlock the Wonders of</p>
+            <h1 class="title hero-title">Ukraine</h1>
+            <a class="hero-button" href="#tours">Our tours</a>
+          </div>
           <div class="hero-soc">
             <a
               href="https://www.instagram.com/"

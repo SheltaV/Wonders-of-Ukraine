@@ -1,0 +1,71 @@
+@media screen and (min-width: 835px) {
+
+    .container {
+        padding: 0 32px;
+    }
+
+/*----------------- header + burger -----------------*/
+
+    .burger-button {
+        display: none;
+    }
+
+    .header-container {
+        align-items: center;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu-list {
+        display: flex;
+        gap: 32px;
+    }
+
+    .menu-link {
+        color: var(--main-color);
+        font-weight: 700;
+        line-height: 1.38;
+    }
+
+/*----------------- hero -----------------*/
+
+    .hero-wrap {
+        padding-top: 318px;
+        margin-bottom: 135px;
+    }
+
+    .hero-subtitle {
+        font-size: 48px;
+        line-height: 1.39;
+        max-width: 470px;
+    }
+
+    .hero-title {
+        top: -30px;
+        font-size: 128px;
+        margin-bottom: 34px;
+    }
+    
+    .hero-title::after {
+        top: 120px;
+    }
+
+    .hero-soc {
+        flex-flow: column;
+        align-items: end;
+        padding-bottom: 64px;
+    }
+
+/*----------------- about -----------------*/
+
+/*----------------- tours -----------------*/
+
+/*----------------- reviews -----------------*/
+
+/*----------------- travel -----------------*/
+
+/*----------------- footer -----------------*/
+
+}
