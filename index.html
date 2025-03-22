@@ -119,27 +119,31 @@
       <section class="about">
         <div class="container about-container">
           <h2 class="title about-title" id="about">About us</h2>
-          <p class="about-text">
-            Welcome to our travel agency in Ukraine! We are a locally owned and
-            operated travel agency that specializes in creating unique and
-            unforgettable travel experiences for our clients. Our team of
-            experienced travel professionals is dedicated to providing
-            personalized service to help you plan your dream vacation. We have
-            extensive knowledge of Ukraine's culture, history, and geography,
-            which allows us to create customized itineraries that showcase the
-            best of our beautiful country.
-          </p>
-          <p class="about-text">
-            We are committed to providing our clients with exceptional customer
-            service and support throughout their travels. Our team is always
-            available to assist you with any questions or concerns you may have
-            before, during, and after your trip.
-          </p>
-          <p class="about-text">
-            Thank you for considering our travel agency for your travel needs.
-            We look forward to helping you plan an unforgettable vacation in
-            Ukraine or beyond!
-          </p>
+          <div class="about-wrap">
+            <p class="about-text">
+              Welcome to our travel agency in Ukraine! We are a locally owned
+              and operated travel agency that specializes in creating unique and
+              unforgettable travel experiences for our clients. Our team of
+              experienced travel professionals is dedicated to providing
+              personalized service to help you plan your dream vacation. We have
+              extensive knowledge of Ukraine's culture, history, and geography,
+              which allows us to create customized itineraries that showcase the
+              best of our beautiful country.
+            </p>
+            <div>
+              <p class="about-text">
+                We are committed to providing our clients with exceptional
+                customer service and support throughout their travels. Our team
+                is always available to assist you with any questions or concerns
+                you may have before, during, and after your trip.
+              </p>
+              <p class="about-text">
+                Thank you for considering our travel agency for your travel
+                needs. We look forward to helping you plan an unforgettable
+                vacation in Ukraine or beyond!
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <section class="tours">
@@ -157,46 +161,54 @@
           <h3 class="title tours-subtitle">
             Lake Synevyr and Shipit waterfall
           </h3>
-          <p class="tours-text">
-            This very interesting excursion will introduce you to the most
-            beautiful lake of the Carpathians "Synevyr", the impressive and
-            magical waterfall lake Synevirm "Shypit", which is also located in
-            the Ukrainian Carpathians. You will have the opportunity to try
-            Soymivska and Kelechynska mineral springs, drinks and delicious
-            dishes of Carpathian cuisine and, of course, admire the beautiful
-            scenery of the unique Ukrainian Carpathians.
-          </p>
-          <h4 class="title tours-title-list">Included:</h4>
-          <ul class="tours-list">
-            <li class="tours-list-item">
-              <svg class="icon tours-icons" width="24" height="24">
-                <use href="./images/svg/symbol-defs-pretty.svg#icon-bus"></use>
-              </svg>
-              Transfer
-            </li>
-            <li class="tours-list-item">
-              <svg class="icon tours-icons" width="24" height="24">
-                <use
-                  href="./images/svg/symbol-defs-pretty.svg#icon-id-card"
-                ></use>
-              </svg>
-              Travel insurance
-            </li>
-            <li class="tours-list-item">
-              <svg class="icon tours-icons" width="24" height="24">
-                <use href="./images/svg/symbol-defs-pretty.svg#icon-face"></use>
-              </svg>
-              Professional guide
-            </li>
-            <li class="tours-list-item">
-              <svg class="icon tours-icons" width="24" height="24">
-                <use
-                  href="./images/svg/symbol-defs-pretty.svg#icon-ticket"
-                ></use>
-              </svg>
-              Travel insurance
-            </li>
-          </ul>
+          <div class="tours-wrap">
+            <p class="tours-text">
+              This very interesting excursion will introduce you to the most
+              beautiful lake of the Carpathians "Synevyr", the impressive and
+              magical waterfall lake Synevirm "Shypit", which is also located in
+              the Ukrainian Carpathians. You will have the opportunity to try
+              Soymivska and Kelechynska mineral springs, drinks and delicious
+              dishes of Carpathian cuisine and, of course, admire the beautiful
+              scenery of the unique Ukrainian Carpathians.
+            </p>
+            <div>
+              <h4 class="title tours-title-list">Included:</h4>
+              <ul class="tours-list">
+                <li class="tours-list-item">
+                  <svg class="icon tours-icons" width="24" height="24">
+                    <use
+                      href="./images/svg/symbol-defs-pretty.svg#icon-bus"
+                    ></use>
+                  </svg>
+                  Transfer
+                </li>
+                <li class="tours-list-item">
+                  <svg class="icon tours-icons" width="24" height="24">
+                    <use
+                      href="./images/svg/symbol-defs-pretty.svg#icon-id-card"
+                    ></use>
+                  </svg>
+                  Travel insurance
+                </li>
+                <li class="tours-list-item">
+                  <svg class="icon tours-icons" width="24" height="24">
+                    <use
+                      href="./images/svg/symbol-defs-pretty.svg#icon-face"
+                    ></use>
+                  </svg>
+                  Professional guide
+                </li>
+                <li class="tours-list-item">
+                  <svg class="icon tours-icons" width="24" height="24">
+                    <use
+                      href="./images/svg/symbol-defs-pretty.svg#icon-ticket"
+                    ></use>
+                  </svg>
+                  Travel insurance
+                </li>
+              </ul>
+            </div>
+          </div>
           <button class="button tours-button" type="button">Book</button>
           <div class="arrows-wrap arrows-tours">
             <button class="arrow-button arrow-left" type="button">
@@ -219,13 +231,20 @@
       <section class="gallery">
         <div class="container gallery-container">
           <h2 class="title gallery-title" id="gallery">Gallery</h2>
-          <div class="gallery-image-wrap">
-            <img
-              class="gallery-image"
-              src="./images/gallery-img-mob-1.jpg"
-              alt="winter forest"
-            />
-          </div>
+          <ul class="gallery-image-list">
+            <li class="gallery-image">
+              <img src="./images/gallery-img-1.jpg" alt="winter forest" />
+            </li>
+            <li class="gallery-image">
+              <img src="./images/gallery-img-2.jpg" alt="star sky" />
+            </li>
+            <!-- <li class="gallery-image">
+              <img src="./images/gallery-img-mob-3.jpg" alt="winter forest" />
+            </li>
+            <li class="gallery-image">
+              <img src="./images/gallery-img-mob-4.jpg" alt="winter forest" />
+            </li> -->
+          </ul>
           <div class="arrows-wrap arrows-gallery">
             <button class="arrow-button arrow-left" type="button">
               <svg class="icon gallery-arrows" width="114" height="22">
@@ -247,28 +266,54 @@
       <section class="reviews">
         <div class="container reviews-container">
           <h2 class="title reviews-title">Reviews</h2>
-          <div class="review-wrap">
-            <div class="review-subwrap">
-              <img
-                src="./images/avatars/avatar-dmitro.png"
-                alt="reviewer's avatar"
-                width="80"
-                height="80"
-              />
-              <div>
-                <h4 class="title reviewers-name">Dmitro</h4>
-                <svg class="stars" width="24" height="24">
-                  <use
-                    href="./images/svg/symbol-defs-pretty.svg#icon-star"
-                  ></use>
-                </svg>
+          <ul class="reviews-list">
+            <li class="review-wrap">
+              <div class="review-subwrap">
+                <img
+                  src="./images/avatars/avatar-dmitro.png"
+                  alt="reviewer's avatar"
+                  width="80"
+                  height="80"
+                />
+                <div>
+                  <h4 class="title reviewers-name">Dmitro</h4>
+                  <svg class="stars" width="24" height="24">
+                    <use
+                      href="./images/svg/symbol-defs-pretty.svg#icon-star"
+                    ></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-            <p class="review-text">
-              It was an incredible trip and I am very grateful to the organizers
-              for the opportunity to learn more about our country
-            </p>
-          </div>
+              <p class="review-text">
+                It was an incredible trip and I am very grateful to the
+                organizers for the opportunity to learn more about our country
+              </p>
+            </li>
+            <li class="review-wrap">
+              <div class="review-subwrap">
+                <img
+                  src="./images/avatars/avatar-alisa.png"
+                  alt="reviewer's avatar"
+                  width="80"
+                  height="80"
+                />
+                <div>
+                  <h4 class="title reviewers-name">Dmitro</h4>
+                  <svg class="stars" width="24" height="24">
+                    <use
+                      href="./images/svg/symbol-defs-pretty.svg#icon-star"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="review-text">
+                I really like to travel and try to do it as often as possible.
+                The last one was to Lake Synevir and it was very cool, a great
+                route, a comfortable bus, delicious food. I will definitely go
+                somewhere else with you
+              </p>
+            </li>
+          </ul>
           <div class="arrows-wrap arrows-review">
             <button class="arrow-button arrow-left" type="button">
               <svg class="icon gallery-arrows" width="114" height="22">
@@ -289,14 +334,16 @@
       </section>
       <section class="travel">
         <div class="container travel-container">
-          <h2 class="title travel-title">Start travel</h2>
-          <p class="travel-text">
-            If you want to get an unforgettable trip, quickly fill out the
-            application and we will contact you during the day
-          </p>
-          <p class="travel-text">
-            We are ready to answer any questions and help choose the best tour
-          </p>
+          <div>
+            <h2 class="title travel-title">Start travel</h2>
+            <p class="travel-text">
+              If you want to get an unforgettable trip, quickly fill out the
+              application and we will contact you during the day
+            </p>
+            <p class="travel-text">
+              We are ready to answer any questions and help choose the best tour
+            </p>
+          </div>
           <form class="travel-form">
             <label class="travel-label" for="name">Name</label>
             <input

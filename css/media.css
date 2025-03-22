@@ -4,6 +4,11 @@
         padding: 0 32px;
     }
 
+    .title {
+        font-size: 64px;
+        letter-spacing: 1px;
+    }
+
 /*----------------- header + burger -----------------*/
 
     .burger-button {
@@ -60,11 +65,161 @@
 
 /*----------------- about -----------------*/
 
+    .about {
+        padding: 155px 0;
+        background-size: 992px 574px;
+    }
+
+    .about-title {
+        margin-bottom: 64px;
+    }
+
+    .about-wrap {
+        display: flex;
+        gap: 32px;
+    }
+
+    .about-wrap div, .about-text {
+        width: 370px;
+    }
+
 /*----------------- tours -----------------*/
 
+    .tours {
+        padding-top: 100px;
+    }
+
+    .tours-title {
+        margin-bottom: 64px;
+    }
+
+    .tours-image {
+        width: 918px;
+        height: 642px;
+    }
+
+    .tours-subtitle {
+        margin: 40px 0 24px;
+        font-size: 32px;
+    }
+
+    .tours-wrap {
+        display: flex;
+        gap: 32px;
+    }
+
+    .tours-wrap > div {
+        min-width: 242px;
+    }
+
+    .tours-title-list {
+        font-size: 18px;
+        margin: 0 0 16px;
+    }
+
+    .tours-list-item {
+        gap: 8px;
+    }
+
+    .tours-button {
+        width: 169px;
+        margin: 32px 0 48px;
+    }
+
+    .arrows-tours {
+        width: 496px;
+        margin: 0 auto;
+    }
+
+/*----------------- gallery -----------------*/
+
+    .gallery {
+        padding-top: 100px;
+    }
+    
+    .gallery-image-list {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        margin: 64px 0 52px;
+    }
+    
+    .gallery-image:not(:first-child) {
+        display: block;
+    }
+
+    .gallery-image img {
+        width: 377px;
+        height: 494px;
+    }
 /*----------------- reviews -----------------*/
 
+    .reviews {
+        padding-top: 58px;
+        padding-bottom: 44px;
+    }
+
+    .review-wrap {
+        margin: 32px auto 20px;
+        max-width: 256px;
+        border-radius: 4px;
+    }
+
+    .review-wrap:not(:first-child) {
+        display: block;
+    }
+
+    .reviews-list {
+        margin-bottom: 85px;
+        display: flex;
+        gap: 32px;
+    }
+
+    .reviewers-name {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .review-text {
+        height: 176px;
+    }
+
 /*----------------- travel -----------------*/
+
+    .travel {
+        width: 100%;
+        background-image: unset;
+    }
+
+    .travel::before {
+        content: url(../images/travel-img-tab.jpg);
+        position: absolute;
+        z-index: -1;
+        width: 602px;
+        height: 786px;
+        top: 4000px;
+    }
+
+    .travel-container {
+        display: flex;
+        gap: 32px;
+        border: 1px solid var(--main-color);
+        padding: 79px 49px 61px;
+        margin: 0 auto;
+        max-width: 770px;
+    }
+
+    .travel-title {
+        font-size: 32px;
+    }
+
+    .travel-form {
+        margin-top: 0;
+    }
+
+    .travel-button {
+        border-radius: 4px;
+    }
 
 /*----------------- footer -----------------*/
 

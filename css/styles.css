@@ -227,7 +227,7 @@ body {
 }
 
 .about-text {
-    letter-spacing: 0.2px;
+    letter-spacing: 0.25px;
 }
 
 /*----------------- tours -----------------*/
@@ -250,6 +250,7 @@ body {
     font-size: 24px;
     margin: 16px 0;
     text-align: left;
+    line-height: 1.4;
 }
 
 .tours-text {
@@ -302,13 +303,20 @@ body {
     padding-bottom: 68px;
 }
 
-.gallery-image {
-    margin: 0 auto;
-    border-radius: 4px;
+.gallery-image-list {
+    margin: 32px 0 20px;
 }
 
-.gallery-image-wrap {
-    margin: 32px 0 20px;
+.gallery-image:not(:first-child) {
+    display: none;
+}
+
+.gallery-image img {
+    margin: 0 auto;
+    border-radius: 4px;
+    object-fit: cover;
+    width: 343px;
+    height: 494px;
 }
 
 /*----------------- reviews -----------------*/
@@ -317,10 +325,10 @@ body {
     padding-top: 32px;
     padding-bottom: 20px;
     margin-bottom: 80px;
-    background-image: url(../images/reviews-img-mob.jpg);
+    background-image: url(../images/reviews-img.jpg);
     background-repeat: no-repeat;
-    background-size: 375px 527px;
-    background-position-x: center;
+    background-size: cover;
+    background-position: left -200px center;
 }
 
 .reviewers-name {
@@ -335,18 +343,26 @@ body {
     drop-shadow(27px 0 var(--stars-color));
 }
 
+.reviews-list {
+    margin-bottom: 32px;
+}
+
 .review-wrap {
     padding: 32px;
+    margin: 0 auto;
     border: 1px solid var(--main-color);
     max-width: 279px;
-    margin: 0 auto 20px;
+}
+
+.review-wrap:not(:first-child) {
+    display: none;
 }
 
 .review-subwrap {
     display: flex;
     gap: 24px;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 }
 
 .review-text {
@@ -367,8 +383,6 @@ body {
 }
 
 .travel-container {
-    position: relative;
-    z-index: 1;
     background-color: #141A19;
     padding: 40px 16px;
 }
