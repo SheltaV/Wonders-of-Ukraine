@@ -30,11 +30,16 @@
 
     .menu-link {
         color: var(--main-color);
+        font-size: 18px;
         font-weight: 700;
         line-height: 1.38;
     }
 
 /*----------------- hero -----------------*/
+
+    .hero {
+        padding-bottom: 64px;
+    }
 
     .hero-wrap {
         padding-top: 318px;
@@ -60,7 +65,6 @@
     .hero-soc {
         flex-flow: column;
         align-items: end;
-        padding-bottom: 64px;
     }
 
 /*----------------- about -----------------*/
@@ -76,6 +80,7 @@
 
     .about-wrap {
         display: flex;
+        justify-content: center;
         gap: 32px;
     }
 
@@ -157,6 +162,7 @@
     .reviews {
         padding-top: 58px;
         padding-bottom: 44px;
+        margin-bottom: 100px;
     }
 
     .review-wrap {
@@ -187,20 +193,14 @@
 /*----------------- travel -----------------*/
 
     .travel {
+        padding: 127px 0 143px;
         width: 100%;
-        background-image: unset;
-    }
-
-    .travel::before {
-        content: url(../images/travel-img-tab.jpg);
-        position: absolute;
-        z-index: -1;
-        width: 602px;
-        height: 786px;
-        top: 4000px;
+        background-position: left center;
+        background-size: contain;
     }
 
     .travel-container {
+        box-sizing: border-box;
         display: flex;
         gap: 32px;
         border: 1px solid var(--main-color);
@@ -222,5 +222,90 @@
     }
 
 /*----------------- footer -----------------*/
+
+    .footer {
+        padding-top: 100px;
+    }
+
+    .footer-wrap {
+        padding-top: 32px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-wrap > div {
+        text-align: right;
+    }
+
+    .footer-list {
+        margin-top: 0;
+    }
+
+    .footer-link {
+        font-size: 18px;
+    }
+
+    .footer-link:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .footer-logo {
+        width: 169px;
+        height: 125px;
+    }
+
+    .footer-soc {
+        margin-top: 40px;
+        justify-content: end;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+
+    .contacts-link {
+        font-size: 18px;
+    }
+
+    .contacts-list>li:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+/*----------------- hero -----------------*/
+
+    .hero {
+        padding-bottom: 100px;
+    }
+
+/*----------------- about -----------------*/
+
+    .about {
+        padding-bottom: 164px;
+        background-size: 1024px 574px;
+    }
+
+/*----------------- tours -----------------*/
+
+    .tours-image {
+        width: 704px;
+        height: 515px;
+    }
+
+    .image-wrap:not(:first-child) {
+        display: block;
+    }
+
+    .image-container {
+        display: flex;
+        gap: 32px;
+    }
+
+/*----------------- gallery -----------------*/
+
+/*----------------- reviews -----------------*/
 
 }
