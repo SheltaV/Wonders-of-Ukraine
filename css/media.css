@@ -100,7 +100,6 @@
 
     .tours-image {
         width: 918px;
-        height: 642px;
     }
 
     .tours-subtitle {
@@ -295,17 +294,81 @@
         height: 515px;
     }
 
-    .image-wrap:not(:first-child) {
-        display: block;
+    .tours-subtitle {
+        letter-spacing: 0.2px;
+        margin-bottom: 32px;
     }
 
     .image-container {
-        display: flex;
         gap: 32px;
+        justify-content: center;
     }
+
+    .image-container:not(:first-child) {
+        display: block;
+    }
+
+    .tours-text {
+        display: none;
+    }
+
+    .tours-wrap {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .tours-desktop {
+        display: flex;
+        gap: 200px;
+    }
+
+    .tours-text-list {
+        display: inline;
+        list-style-type: disc;
+        margin-left: 20px;
+        letter-spacing: 0.2px;
+    }
+
+    .tours-button-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .tours-button-wrap>p,
+    .tours-button-wrap span {
+        display: inline;
+        font-size: 32px;
+        font-family: "Jomolhari", serif;
+        line-height: 1.4;
+    }
+
+    .tours-desktop-wrap {
+        width: 510px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tours-button {
+        margin: 32px 0 0;
+    }
+
+    .arrows-tours {
+        display: none;
+    }
+
 
 /*----------------- gallery -----------------*/
 
 /*----------------- reviews -----------------*/
+
+    .reviews-list {
+        margin-bottom: 52px;
+    }
+
+    .review-wrap {
+        margin-top: 64px;
+        margin-bottom: 0;
+    }
 
 }
